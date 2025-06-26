@@ -317,7 +317,10 @@
     .service__actions label {
         margin-right: 10px;
     }
-
+    
+    #service__button--repair {
+        margin-right: 50px;
+    }
 
     .about__more {
         margin-bottom: 80px;
