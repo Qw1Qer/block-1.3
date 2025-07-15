@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "TT Lakes" , sans-serif;
+
 }
 
 .page {
@@ -102,12 +103,13 @@
     font-weight: 500;
     color: #7E7E82;
     margin-left: 20px;
-
-
+    border : 2px solid transparent;
+    border-radius: 5px;
 }
 
+
 .scroll-nav__item:hover {
-    border: #41F6D7 solid 2px;
+    border-color : #41F6D7 ;
     border-radius: 5px;
     background-color: #FFFFFF;
 }
@@ -132,6 +134,7 @@
     padding: 5px 15px 5px 15px;
     font-size: 16px;
     line-height: 24px;
+    border : 2px solid transparent;
 }
 
 .scroll-nav__separator {
