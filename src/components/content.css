@@ -1,0 +1,131 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "TT Lakes", sans-serif;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.shadow {
+  position: absolute;
+  right: 0;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  z-index: 1000;
+}
+
+.page__opacity {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.scroll-shadow {
+  top: 180px;
+  width: 35px;
+  height: 81px;
+}
+
+.list-shadow {
+  top: 635px;
+  width: 35px;
+  height: 85px;
+}
+
+.equipment-shadow {
+  top: 830px;
+  width: 35px;
+  height: 166px;
+}
+
+.conditions-shadow {
+  top: 1150px;
+  width: 24px;
+  height: 200px;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8F8;
+}
+
+/* Основной контент */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 20px 20px 25px 20px;
+}
+
+.about__more {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.about__paragraph--tablet, .about__paragraph--desktop {
+  display: none;
+  list-style: none;
+}
+
+.about__expand {
+  border: none;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .shadow {
+    display: none;
+  }
+  .service__title {
+    padding-left: 15px;
+  }
+  .about__paragraph--tablet {
+    display: flex;
+    row-gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .content__info {
+    display: flex;
+    flex-direction: row;
+  }
+  .about__text {
+    padding-right: 46px;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  .content__image img {
+    width: 360px;
+    height: 208px;
+    border-radius: 3%;
+    margin-right: 15px;
+  }
+  .brands__text {
+    margin-top: 26px;
+  }
+}
+
+/*# sourceMappingURL=content.css.map */

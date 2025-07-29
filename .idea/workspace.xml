@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2290419a-7a3a-4e30-ae9b-c977788d906f" name="Changes" comment="1.6" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mobile_menu" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Qw1Qer&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Qw1Qer/block-1.3.git&quot;,
+    &quot;accountId&quot;: &quot;eb59f60d-f312-4e90-a52d-0be75861ebad&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2zP6AXWW7Dzo8qSLqrYWyjdZt22" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/artem/WebstormProjects/block-1.3/assets",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\artem\WebstormProjects\block-1.3\assets" />
+      <recent name="C:\Users\artem\WebstormProjects\block-1.3\slidemenu" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\artem\WebstormProjects\block-1.3\src" />
+      <recent name="C:\Users\artem\WebstormProjects\block-1.3\src\css" />
+      <recent name="C:\Users\artem\WebstormProjects\block-1.3\assets" />
+      <recent name="C:\Users\artem\WebstormProjects\block-1.3\slidemenu\assets" />
+      <recent name="C:\Users\artem\WebstormProjects\block-1.3" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2290419a-7a3a-4e30-ae9b-c977788d906f" name="Changes" comment="" />
+      <created>1751620217933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751620217933</updated>
+      <workItem from="1751620219025" duration="18428000" />
+      <workItem from="1751702884481" duration="9395000" />
+      <workItem from="1752147076489" duration="3550000" />
+      <workItem from="1752237237403" duration="5000" />
+      <workItem from="1752584882153" duration="30000" />
+      <workItem from="1752600534483" duration="1423000" />
+      <workItem from="1752610095536" duration="367000" />
+      <workItem from="1752667828114" duration="5000" />
+      <workItem from="1752680032622" duration="199000" />
+      <workItem from="1753278543969" duration="1421000" />
+      <workItem from="1753280691495" duration="7901000" />
+      <workItem from="1753366285737" duration="11994000" />
+      <workItem from="1753378390675" duration="2197000" />
+      <workItem from="1753456586423" duration="4876000" />
+      <workItem from="1753461500185" duration="4939000" />
+      <workItem from="1753466475680" duration="5001000" />
+      <workItem from="1753509526946" duration="6693000" />
+      <workItem from="1753516266032" duration="13846000" />
+      <workItem from="1753610841578" duration="14181000" />
+      <workItem from="1753643907164" duration="326000" />
+      <workItem from="1753705470884" duration="22387000" />
+      <workItem from="1753773306842" duration="3351000" />
+      <workItem from="1753796393987" duration="9155000" />
+    </task>
+    <task id="LOCAL-00001" summary="1.1.3">
+      <option name="closed" value="true" />
+      <created>1751621163183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751621163183</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.1.3 v2">
+      <option name="closed" value="true" />
+      <created>1751710124825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751710124825</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.1.3 v2">
+      <option name="closed" value="true" />
+      <created>1751710516384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751710516384</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.1.3 v2">
+      <option name="closed" value="true" />
+      <created>1752601336157</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752601336157</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.6">
+      <option name="closed" value="true" />
+      <created>1753805114537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753805114537</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.1.3" />
+    <MESSAGE value="1.1.3 v2" />
+    <MESSAGE value="1.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.6" />
+  </component>
+</project>
