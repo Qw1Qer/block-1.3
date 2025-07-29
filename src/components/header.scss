@@ -1,0 +1,222 @@
+$buttonColor: #FF3E79;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #FFFFFF;
+}
+
+.header__icon, .header__link {
+  background-color: $buttonColor;
+  border-radius: 80%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+  margin-left: 50px;
+}
+
+.header__icon--left, .header__divider--left, .header__logo--left {
+  margin-right: 8px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+
+.header__line {
+  margin-right: 5px;
+}
+
+.header__divider {
+  display: none;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__title {
+  font-size: 28px;
+  border-left: #41F6D7 solid 5px;
+  padding-left: 13px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.service__actions {
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header__menu {
+  display: none;
+  list-style: none;
+}
+
+.header__menu--hidden {
+  display: none;
+  list-style: none;
+  align-items: center;
+}
+
+.scroll-nav {
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-around;
+  white-space: nowrap;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7E7E82;
+  margin-left: 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.scroll-nav__item:hover {
+  border-color: #41F6D7;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.header__button {
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: $buttonColor;
+  border-radius: 80%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-nav__item {
+  padding: 5px 15px 5px 15px;
+  font-size: 16px;
+  line-height: 24px;
+  border: 2px solid transparent;
+}
+
+.scroll-nav__separator {
+  display: none;
+}
+
+.header__link {
+  background-color: $buttonColor;
+  border-radius: 80%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+[src="assets/divider.svg"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+  .header__icon--left {
+    display: none;
+  }
+
+  .header__menu--hidden {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__line {
+    display: none;
+  }
+
+  .header__divider {
+    display: inline-block;
+  }
+  .header__icons {
+    column-gap: 10px;
+    margin-left: 55px;
+  }
+
+  
+}
+@media (min-width: 1440px) {
+  .header {
+    display: none;
+  }
+  .scroll-nav {
+    overflow-x: unset;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 60px;
+  }
+
+  .scroll-nav__item {
+    padding: 10px 10px;
+  }
+
+  .scroll-nav__separator {
+    display: flex;
+    width: 100%;
+  }
+  .service__title {
+    padding-left: 20px;
+  }
+  .service__actions {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .service__button {
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 80%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .service__title {
+    padding-left: 35px;
+  }
+
+
+  .service__actions label {
+    margin-right: 10px;
+  }
+
+  #service__button--repair {
+    margin-right: 35px;
+  }
+}

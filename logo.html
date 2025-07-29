@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html">
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>1.3</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body class="page">
+<div class="page__opacity">
       <header class="header">
           <div class="header__icons">
-              <a class="header__icon header__icon--left" href="#">
-                  <img src="assets/icon.svg">
-              </a>
               <span class="header__divider header__divider--left">
                       <img src="assets/divider.svg" alt="">
                   </span>
@@ -32,15 +31,17 @@
                   <img src="assets/checkstatus.svg" alt="">
             </button>
             <ul class="header__menu header__menu--hidden">
-                  <li class="header__menu-item"><a href="#" class="header__link"><img src="assets/icon2.svg"></a></li>
-                  <li class="header__menu-item"><a href="#" class="header__link"><img src="assets/chat.svg"></a></li>
-                  <li class="header__menu-item"><a href="#" class="header__link"><img src="assets/profile.svg"></a></li>
+                <li class="header__menu-item"><button class="header__link"><img src="assets/icon2.svg"></button></li>
+                  <li class="header__menu-item"><button class="header__link"><img src="assets/chat.svg"></button></li>
+                  <li class="header__menu-item"><button class="header__link"><img src="assets/profile.svg"></button></li>
                   <li class="header__menu-item"><img src="assets/divider.svg"></li>
-                  <li class="header__menu-item"><a href="#" class="header__link"><img src="assets/repair.svg" alt=""></a></li>
-                  <li class="header__menu-item"><a href="#" class="header__link"><img src="assets/checkstatus.svg" alt=""></a></li>
+                  <li class="header__menu-item"><button class="header__link"><img src="assets/repair.svg" alt=""></button></li>
+                  <li class="header__menu-item"><button class="header__link"><img src="assets/checkstatus.svg" alt=""></button></li>
             </ul>
          </nav>
       </header>
+</div>
+<div class="page__opacity">
       <nav class="service">
             <h1 class="service__title">Услуги и сервисы</h1>
             <span class="service__actions">
@@ -62,8 +63,82 @@
           <div class="scroll-nav__item"> Специальные цены</div>
           <div class="scroll-nav__separator"></div>
           <div class="scroll-nav__item"> Отзывы </div>
+          <div class="scroll-shadow shadow"></div>
       </nav>
+</div>
+      <aside class="page__sidebar sidebar ">
+          <div class="sidebar__content">
+          <h3 class="sidebar__title"><img src="assets/highlight.svg">Обратная связь</h3>
+          <form class="sidebar__form">
+              <input type="text" class="sidebar__input" placeholder="Имя" required>
+              <input type="tel" class="sidebar__input" placeholder="Телефон" required>
+              <input type="email" class="sidebar__input" placeholder="Электронная почта" required>
+              <input type="text" class="sidebar__input" placeholder="Сообщение" required>
+              <a class="sidebar__condition" href="">
+                  Нажимая “отправить”, вы даете согласие на
+                  <span class="sidebar__condition">обработку персональных данных</span>
+                  и соглашаетесь с нашей
+                  <span class="sidebar__condition">политикой конфиденциальности</span>
+              </a>
+              <button class="sidebar__button" type="submit">Отправить</button>
+          </form>
+              <button class="sidebar__close"><img src="assets/cross.svg" width="16px" height="16px"></button>
+          </div>
+      </aside>
+      <aside class="page__sidebar call">
+          <div class="call__content">
+              <h3 class="call__title"><img src="assets/highlight.svg">Заказать звонок</h3>
+              <form class="call__form">
+                  <input type="tel" class="call__input" placeholder="Телефон" required>
+                  <a class="call__condition" href="">
+                      Нажимая “отправить”, вы даете согласие на
+                      <span class="call__condition">обработку персональных данных</span>
+                      и соглашаетесь с нашей
+                      <span class="call__condition">политикой конфиденциальности</span>
+                  </a>
+                  <button class="call__button" type="submit">Отправить</button>
+              </form>
+              <button class="call__close"><img src="assets/cross.svg" width="16px" height="16px"></button>
+          </div>
+      </aside>
+      <aside class="slide">
+      <div class="slide__space-top"></div>
+      <section class="top-board">
+          <button class="top-board__button top-board__button--left"><img src="assets/cross.svg"></button>
+          <div class="top-board__logo"><img src="assets/Group.svg "></div>
+          <button class="top-board__button top-board__button--right"><img src="assets/search.svg"></button>
+          <button class="top-board__button off-slide"><img src="assets/icon.svg"></button>
+      </section>
+      <div class="slide__space-bottom"></div>
+      <nav class="item">
+          <a class="item__point" href="">Ремонт техники</a>
+          <a class="item__point" href="">Услуги и сервисы</a>
+          <a class="item__point" href="">Корпоративным клиентам</a>
+          <a class="item__point" href="">Продавцам техники</a>
+          <a class="item__point" href="">Партнерам</a>
+          <a class="item__point" href="">Производителям</a>
+          <a class="item__point" href="">Наши сервисные центры</a>
+          <a class="item__point" href="">Контакты</a>
+          <div class="item__space"></div>
+          <div class="copy slide__copy">
+              <button class="copy__button callOpen"><img src="assets/icon2.svg"></button>
+              <button class="copy__button bid"><img src="assets/chat.svg"></button>
+              <button class="copy__button"><img src="assets/profile.svg"></button>
+          </div>
+          <div class="lang">
+              <p class="list__lang">mail@cps.com</p>
+              <h2 class="list__lang">8 800 890 8900</h2>
+              <div class="lang__space"></div>
+              <p class="lang-choose list__lang">
+                  <a class="lang-choose--ru" href="">RU</a>
+                  <a class="lang-choose--en" href="">EN</a>
+                  <a class="lang-choose--ch" href="">CH</a>
+          </div>
+      </nav>
+      </aside>
       <main class="content">
+          <div class="page__opacity">
+          <div class="content__info">
             <div class="about__text">
                   <p class="about__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                       Только у нас вы можете отремонтировать свой ноутбук
@@ -80,8 +155,322 @@
                   </div>
             </div>
             <div class="content__image"><img src="assets/Picture.png" width="320" height="176"></div>
+          </div>
+          <div class="content__swip">
+          <div class="brands__text">
+              <p class="text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
+          </div>
+          <div class="list">
+              <div class="brands__shadow"></div>
+              <div class="list-wrapper">
+                  <div class="list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Lenovo.svg" width="108px" height="32px" alt="Lenovo">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Samsung.png" width="116px" height="39px" alt="Samsung">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Apple.svg" width="44px" height="44px" alt="Apple">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide ">
+                      <div class="point">
+                          <img class="point__logo" src="assets/ViewSonic.svg" width="128px" height="21px" alt="ViewSonic">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Bosch.svg" width="128px" height="29px" alt="Bosch">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Hp.svg" width="52px" height="52px" alt="Hp">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Acer.svg" width="94px" height="24px" alt="Acer">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide ">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Sony.svg" width="128px" height="26px" alt="Sony">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Lenovo.svg" width="108px" height="32px" alt="Lenovo">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Samsung.png" width="116px" height="39px" alt="Samsung">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class=" list-slide">
+                      <div class="point">
+                          <img class="point__logo" src="assets/Apple.svg" width="44px" height="44px" alt="Apple">
+                          <button class="point__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <section class="brands__button">
+                  <button class="more__button" id="more__button--id" >
+                      <img class="button__arrow" src="assets/expand.svg" alt="">
+                  </button>
+                  <label for="more__button--id" class="more__label">Показать все</label>
+              </section>
+          </div>
+          <div class="list-shadow shadow"></div>
+          <div class="brands__text">
+              <p class="text">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</p>
+          </div>
+
+          <div class="equipment">
+              <div class="equipment-wrapper">
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт ноутбуков</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт планшетов</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт ПК</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide ">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт мониторов</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт аудиосистем</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт ноутбуков</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт ноутбуков</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide ">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт ноутбуков</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт ноутбуков</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт ноутбуков</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="equipment-slide">
+                      <div class="equipment__chapter">
+                          <p class="equipment__text">Ремонт ноутбуков</p>
+                          <button class="equipment__button buttons" >
+                              <img  src="assets/button.svg" alt="">
+                              <img class="buttons__arrow" src="assets/dropdown.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <section class="equipment__more">
+                  <button class="more__equipment" id="equipment__button--id" >
+                      <img class="button__arrow" src="assets/expand.svg" alt="">
+                  </button>
+                  <label for="equipment__button--id" class="equipment__label">Показать все</label>
+              </section>
+          </div>
+
+          <div class="equipment-shadow shadow"></div>
+          <div class="brands__text">
+              <p class="text">ЦЕНЫ НА УСЛУГИ</p>
+          </div>
+          <div class="conditions">
+              <div class="conditions-wrapper">
+                  <div class="conditions-slide">
+                      <div class="conditions__services">
+                          <p class="services">Диагностика</p>
+                      </div>
+                      <div class="conditions__services">
+                          <p>Бесплатно</p>
+                      </div>
+                      <div class="conditions__services">
+                          <p>30 мин</p>
+                      </div>
+                          <button class="conditions__button"> заказать <img class="conditions__img" src="assets/dropdown.svg"> </button>
+                  </div>
+                  <div class="conditions-slide">
+                      <div class="conditions__services">
+                          <p class="services">Замена дисплея</p>
+                      </div>
+                      <div class="conditions__services">
+                          <p>1000₽</p>
+                      </div>
+                      <div class="conditions__services">
+                          <p>30-120 мин</p>
+                      </div>
+                          <button class="conditions__button"> заказать <img class="conditions__img" src="assets/dropdown.svg"> </button>
+                  </div><div class="conditions-slide">
+                  <div class="conditions__services">
+                      <p class="services">Замена полифонического динамика</p>
+                  </div>
+                  <div class="conditions__services">
+                      <p>1000₽</p>
+                  </div>
+                  <div class="conditions__services">
+                      <p>30-120 мин</p>
+                  </div>
+                      <button class="conditions__button"> заказать <img class="conditions__img" src="assets/dropdown.svg"> </button>
+              </div><div class="conditions-slide">
+                  <div class="conditions__services">
+                      <p class="services">Тестирование с выдачей технического заключения</p>
+                  </div>
+                  <div class="conditions__services">
+                      <p>1000₽</p>
+                  </div>
+                  <div class="conditions__services">
+                      <p>30-120 мин</p>
+                  </div>
+                      <button class="conditions__button"> заказать <img class="conditions__img" src="assets/dropdown.svg"> </button>
+                    </div>
+                  <div class="conditions-slide">
+                  <div class="conditions__services">
+                      <p class="services">Замена программного обеспечения</p>
+                  </div>
+                  <div class="conditions__services">
+                      <p>1000₽</p>
+                  </div>
+                  <div class="conditions__services">
+                      <p>30-120 мин</p>
+                  </div>
+                      <button class="conditions__button"> заказать <img class="conditions__img" src="assets/dropdown.svg"> </button>
+              </div>
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
+          <div class="conditions-shadow shadow"></div>
+          <section class="content__information information">
+              <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+              <button class="button__information">Получить коммерческое предложение <img src="assets/dropdown.svg"></button>
+          </section>
+          </div>
+          </div>
       </main>
-      <footer>
+      <footer class="footer">
+          <p>© 2019 CPS<br> Разработано командой Apesong</br> </p>
+          <p>Политика конфиденциальности</p>
+          <p>Информация, размещенная на данной странице, не является публичной офертой</p>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+<script src="Swiper2.js"></script>
+<script src="Swiper3.js"></script>
+        </div>
 </body>
 </html>

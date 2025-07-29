@@ -1,0 +1,157 @@
+.list {
+  background-color: #F8F8F8;
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
+
+.list-wrapper {
+  height: 160px;
+}
+
+.brands__shadow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+  height: 81px;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+
+.swiper {
+  margin-top: 20px;
+}
+
+.swiper-slide {
+  width: auto !important;
+  flex-shrink: 0;
+}
+
+.point {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #EAEAEA;
+  width: 230px;
+  height: 72px;
+  margin-left: 0;
+  border-radius: 8px;
+
+  &:first-child {
+    margin-left: 16px;
+  }
+}
+
+.point__logo {
+  margin-left: 16px;
+}
+
+.point__button {
+  position: relative;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-slide:nth-child(6) .point__logo {
+  margin-left: 10px;
+}
+
+.buttons__arrow {
+  position: absolute;
+  left: 17px;
+  top: 14px;
+}
+
+.brands__button {
+  display: none;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 16px !important;
+  bottom: auto !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B5B6BC !important;
+
+  /* Цвет активной точки */
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin-left: 6px !important;
+}
+
+@media (min-width: 768px) {
+
+  .list-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    row-gap: 16px;
+    column-gap: 6px;
+    margin-left: 4px;
+  }
+
+
+
+  .brands__shadow {
+    display: none;
+  }
+
+  .brands__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 26px;
+  }
+
+  .more__button {
+    width: 24px;
+    height: 24px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .arrow--top {
+    transform: rotate(180deg);
+  }
+  
+}
+@media (min-width: 1440px) {
+  .list-slide {
+    &:nth-child(4), &:nth-child(8) {
+      display: unset;
+    }
+  }
+
+
+  .list-wrapper {
+
+    column-gap: 32px;
+  }
+
+  .more, .hidden {
+    left: 25px;
+    top: 24px;
+  }
+
+  .overflow {
+    overflow: hidden;
+  }
+
+  .services {
+    width: 30vw;
+  }
+}

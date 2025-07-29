@@ -1,0 +1,262 @@
+$buttonColor: #FF3E79;
+$shadow: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "TT Lakes" , sans-serif;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.shadow {
+  position: absolute;
+  right: 0;
+  background: $shadow;
+  z-index: 1000;
+
+}
+.page__opacity {
+  display: block;
+  opacity: 1;
+  transition: opacity 1s;
+
+}
+
+.scroll-shadow{
+  top: 180px;
+  width: 35px;
+  height: 81px;
+
+}
+
+.list-shadow {
+  top: 635px;
+  width: 35px;
+  height: 85px;
+
+}
+
+.equipment-shadow {
+  top: 830px;
+  width: 35px;
+  height: 166px;
+
+}
+
+.conditions-shadow {
+  top: 1150px;
+  width: 24px;
+  height: 200px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8F8;
+  overflow-x:hidden ;
+}
+
+/* Основной контент */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 20px 20px 25px 20px;
+}
+
+.about__more {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.about__paragraph--tablet, .about__paragraph--desktop {
+  display: none;
+  list-style: none;
+}
+
+.about__expand {
+  border: none;
+  background: none;
+}
+.brands__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #7E7E82;
+  width: 100%;
+  height: 57px;
+  padding-left: 24px;
+  border-top: 1px solid #D9FFF5;
+  margin-top: 16px;
+  background-image: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+.content__information {
+  position: relative;
+  margin-top: 32px;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.button__information {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 192px;
+  text-align: left;
+}
+
+
+@media (min-width: 768px) {
+  .shadow {
+    display: none;
+  }
+
+
+  .service__title {
+    padding-left: 15px;
+  }
+
+  .about__paragraph--tablet {
+    display: flex;
+    row-gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .content__info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about__text {
+    padding-right: 46px;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .content__image img {
+    width: 360px;
+    height: 208px;
+    border-radius: 3%;
+    margin-right: 15px;
+  }
+
+  .brands__text {
+    margin-top: 26px;
+    padding-left: 26px;
+  }
+
+  .content__information {
+    width: 420px;
+    margin-left: 24px;
+  }
+
+  .button__information {
+    width: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .page {
+    position: absolute;
+    left: 300px;
+    width: 1120px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 20px;
+    overflow-x: hidden;
+  }
+  .content {
+    margin-left: 32px;
+  }
+  .service__title {
+    margin-left: 18px;
+  }
+  .scroll-nav {
+    overflow-x: unset;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 54px;
+  }
+
+  .services {
+    width: 30vw;
+  }
+
+  .brands__text {
+    width: 120%;
+    padding-left: 24px;
+  }
+
+
+  .service__title {
+    padding-left: 20px;
+  }
+
+  .content__info {
+    margin-left: 12px;
+  }
+
+
+  .scroll-nav__item {
+    padding: 10px 10px;
+  }
+
+  .scroll-nav__separator {
+    display: flex;
+    width: 100%;
+  }
+
+  .about__paragraph--tablet {
+    display: none;
+  }
+
+  .about__paragraph--desktop {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .content__image img {
+    width: 531.35px;
+    height: 307px;
+    border-radius: 1%;
+    margin-right: 25px;
+  }
+  .content__information {
+    left: 0;
+  }
+
+  .about__more {
+    margin-bottom: 80px;
+  }
+
+  .about__text {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}

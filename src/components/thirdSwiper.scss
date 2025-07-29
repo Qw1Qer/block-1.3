@@ -1,0 +1,127 @@
+$buttonColor: #FF3E79;
+.conditions {
+  margin-top: 24px;
+  margin-left: 16px;
+
+}
+
+.conditions__services {
+  &:first-child::before {
+    content: "Ремонтные услуги";
+    opacity: 0.5;
+  }
+
+  &:nth-child(2)::before {
+    content: "Цена";
+    opacity: 0.5;
+  }
+
+  &:nth-child(3)::before {
+    content: "Срок";
+    opacity: 0.5;
+  }
+
+  &:first-child {
+    margin-top: 16px;
+  }
+}
+
+.conditions-slide {
+  background-color: white;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+}
+
+
+.conditions__services {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  width: 250px;
+  height: 60px;
+}
+
+.conditions__button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  left: 120px;
+  top: 150px;
+  width: 119px;
+  height: 32px;
+  background-color: $buttonColor;
+  color: white;
+  border-radius: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.conditions__img {
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width: 768px) {
+  .conditions {
+    margin-left: 32px;
+  }
+  .conditions-wrapper {
+    width: 90vw;
+    box-shadow: 0 1px 0 10px white;
+    border-radius: 6px;
+  }
+
+  .conditions-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: inset 0 1px 0 6px white;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    border-radius: 0;
+    font-size: 14px;
+
+    &:last-child {
+      border-bottom: transparent;
+    }
+  }
+
+  .services {
+    width: 40vw;
+  }
+
+  .conditions__services {
+    padding-top: 24px;
+    height: 64px;
+    width: auto;
+  }
+
+  .conditions__button {
+    position: unset;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+
+  .conditions__services {
+    &:first-child::before, &:nth-child(2)::before, &:nth-child(3)::before {
+      content: "";
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .conditions-wrapper {
+    width: 65vw;
+
+  }
+  .services {
+    width: 30vw;
+  }
+}
